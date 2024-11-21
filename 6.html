@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getGradeMessage(grade) {
+    let message;
+
+    switch (grade) {
+        case 'A+' && 'a+':
+            message = "You have obtained grade A+.";
+            break;
+        case 'A' && 'a':
+            message = "You have obtained grade A.";
+            break;
+        case 'B+'&& 'b+':
+            message = "You have obtained grade B+.";
+            break;
+        case 'B' && 'b':
+            message = "You have obtained grade B.";
+            break;
+        default:
+            message = "You have obtained other grade.";
+    }
+
+    return message;
+}
+
+
+const userInput = prompt("Enter your grade (A+, A, B+, B):");
+
+
+const resultMessage = getGradeMessage(userInput);
+
+
+alert(resultMessage);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

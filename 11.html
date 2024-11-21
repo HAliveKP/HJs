@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert String via Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Insert String into Paragraph</h1>
+    <button onclick="insertString()">Insert String</button>
+
+    <p id="outputParagraph"></p>
+
+    <script>
+        function insertString() {
+            // Get the paragraph element by its ID
+            const paragraph = document.getElementById('outputParagraph');
+            // Insert the string into the paragraph
+            paragraph.textContent = "We are learning JS";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Paragraphs with jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        p {
+            cursor: pointer; /* Change cursor to pointer for better UX */
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click to Hide Paragraphs</h1>
+    <p>This is the first paragraph. Click here to hide it.</p>
+    <p>This is the second paragraph. Click here to hide it as well.</p>
+
+    <script>
+        $(document).ready(function() {
+            // Hide the paragraph when clicked
+            $('p').click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+</html>
